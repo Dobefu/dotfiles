@@ -33,12 +33,6 @@ if [ "$color_prompt" = yes ]; then
     source /usr/share/git/completion/git-prompt.sh
   fi
 
-  # Fedora
-  if [ -f "/usr/share/git-core/contrib/completion/git-prompt.sh" ]; then
-    # shellcheck source=/dev/null
-    source /usr/share/git-core/contrib/completion/git-prompt.sh
-  fi
-
   PS2="\[\e[1;103m\]  \[\e[33;49m\] \[\e[0m\]"
 
   choose_ps1() {
