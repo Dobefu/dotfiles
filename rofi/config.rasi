@@ -1,0 +1,158 @@
+configuration {
+  display-drun:    "Activate";
+  display-run:     "Execute";
+  show-icons:      true;	
+  matching:        "glob";
+  sort:            false;
+  sorting-method:  "fzf";
+  disable-history: false;
+}
+
+* {
+  background-color:            #353535;
+  text-color:                  #c2c2c2;
+  selbg:                       #424242;
+  actbg:                       #424242;
+  urgbg:                       #e53935;
+  winbg:			                 #c2c2c2;
+
+  selected-normal-foreground:  @winbg;
+  normal-foreground:           @text-color;
+  selected-normal-background:  @actbg;
+  normal-background:           @background-color;
+
+  selected-urgent-foreground:  @background-color;
+  urgent-foreground:           @text-color;
+  selected-urgent-background:  @urgbg;
+  urgent-background:           @background-color;
+
+  selected-active-foreground:  @winbg;
+  active-foreground:           @text-color;
+  selected-active-background:  @actbg;
+  active-background:           @selbg;
+
+  separator-style:             "none";
+  hide-scrollbar:              "true";
+  margin:                      0px;
+  padding:                     0px;
+  font:                        "Helvetica medium 12";
+}
+
+window {
+  location:	     center;
+  anchor:		     center;
+  x-offset:      0px;
+  height:	       50%;
+  width:         50%;
+  border-radius: 6px;
+  margin-right:  60px;
+  orientation:   horizontal;
+  children:	     [mainbox];
+}
+
+mainbox {
+  spacing:  0em;
+  padding:  0px;
+  width:    200px;
+  children: [ inputbar, listview-container ];
+  expand:   true;
+}
+
+button { padding: 5px 2px; }
+
+button selected {
+  background-color: @active-background;
+  text-color:       @background-color;
+}
+
+inputbar {
+  children: [ entry-container ];
+}
+
+textbox-prompt-colon {                                                
+  text-color: inherit;                                              
+  expand: false;                                                    
+  margin: 0 0.3em 0em 0em;
+}  
+
+listview-container {
+  border: 1px solid;
+  border-color: #1b1b1b;
+  margin: 12px;
+  children: [ listview ];
+}
+
+listview {
+  spacing: 0em;
+  dynamic: false;
+  cycle:   true;
+  background-color: #272727;
+}
+
+element { 
+  padding: 16px;
+}
+
+entry-container {
+  background-color: #272727;
+  children: [ entry ];
+}
+
+entry {
+  expand:           true;
+  text-color:       @normal-foreground;
+  background-color: #353535;
+  vertical-align:   1;
+  padding:          12px;
+  font:             "Helvetica medium 14";
+  border:           1px solid;
+  border-color:	    #1b1b1b;
+  border-radius:    5px;
+  margin: 6px;
+}
+
+element normal.normal {
+  background-color: #272727;
+  text-color:       @normal-foreground;
+}
+
+element normal.urgent {
+  background-color: @urgent-background;
+  text-color:       @urgent-foreground;
+}
+
+element normal.active {
+  background-color: @active-background;
+  text-color:       @active-foreground;
+}
+
+element selected.normal {
+  background-color: @selected-normal-background;
+  text-color:       @selected-normal-foreground;
+  padding: 16px;
+}
+
+element selected.urgent {
+  background-color: @selected-urgent-background;
+  text-color:       @selected-urgent-foreground;
+}
+
+element selected.active {
+  background-color: @selected-active-background;
+  text-color:       @selected-active-foreground;
+}
+
+element alternate.normal {
+  background-color: #272727;
+  text-color:       @normal-foreground;
+}
+
+element alternate.urgent {
+  background-color: @urgent-background;
+  text-color:       @urgent-foreground;
+}
+
+element alternate.active {
+  background-color: @active-background;
+  text-color:       @active-foreground;
+}

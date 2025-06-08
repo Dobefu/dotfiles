@@ -1,0 +1,26 @@
+[user]
+	email = info@dobefu.com
+  name = Connor van Spronssen
+[core]
+  editor = nvim
+  excludesfile = ~/.gitignore_global
+[color]
+  ui = true
+[merge]
+  tool = nvim
+[init]
+  templateDir = ~/.git_template
+  defaultBranch = main
+[alias]
+  poes = push
+  pool = pull
+  stauts = status
+  ls = status
+  ctags = !.git/hooks/ctags
+  hide = update-index --assume-unchanged
+  unhide = update-index --no-assume-unchanged
+  root = rev-parse --show-toplevel
+[pull]
+	rebase = false
+[push]
+	autoSetupRemote = true

@@ -1,0 +1,85 @@
+! General config
+Xcursor.size: 16
+Xft.dpi: 100
+Xft.antialias: true
+
+XTerm*decTerminalID: vt340
+XTerm*numColorRegisters: 256
+
+*background: #323234
+*foreground: #dddddd
+*color0:     #323232
+*color1:     #cc0000
+*color2:     #5cbd00
+*color3:     #e9bf00
+*color4:     #2c79da
+*color5:     #805089
+*color6:     #00b2b4
+*color7:     #d7d7d7
+*color8:     #5e5e5e
+*color9:     #ef1616
+*color10:    #8ae234
+*color11:    #fce94f
+*color12:    #5595e3
+*color13:    #a464b2
+*color14:    #34e2e2
+*color15:    #f7f7f7
+
+
+! XTerm config
+XTerm.vt100.locale: true
+XTerm.vt100.metaSendsEscape: true
+
+XTerm.vt100.faceName: Inconsolata for Powerline-Medium:size=12
+XTerm.vt100.scaleHeight: 1.01
+
+XTerm*termName: xterm-256color
+xterm*Translations: #override \
+  Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
+
+! URxvt config
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+URxvt.font: xft:Hack:size=10
+URxvt*letterSpace: 0
+
+! Avoid scrolling the pager on secondary screens
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+URxvt*depth: 32
+
+URxvt.scrollBar_right: True
+
+URxvt*background: rgba:0000/0000/0000/cc00
+URxvt*foreground: #dddddd
+URxvt*color0:     #323232
+URxvt*color1:     #cc0000
+URxvt*color2:     #5cbd00
+URxvt*color3:     #e9bf00
+URxvt*color4:     #2c79da
+URxvt*color5:     #805089
+URxvt*color6:     #00b2b4
+URxvt*color7:     #d7d7d7
+URxvt*color8:     #5e5e5e
+URxvt*color9:     #ef1616
+URxvt*color10:    #8ae234
+URxvt*color11:    #fce94f
+URxvt*color12:    #5595e3
+URxvt*color13:    #a464b2
+URxvt*color14:    #34e2e2
+URxvt*color15:    #f7f7f7
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-W: eval:exit
+
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End: \033[4~
+URxvt.keysym.KP_Home: \033[1~
+URxvt.keysym.KP_End:  \033[4~

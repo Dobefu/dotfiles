@@ -1,0 +1,56 @@
+#!/bin/bash
+
+export VIMINIT="let \$VIMRC='$SSHHOME/.sshrc.d/.vimrc' | source \$VIMRC"
+export PATH="$PATH:$SSHHOME/.sshrc.d/bin"
+export TERM="xterm-256color"
+export DISPLAY="localhost:10.0"
+
+if echo "$SHELL" | grep -q 'bash'; then
+  # check the window size after each command and, if necessary,
+  # update the values of LINES and COLUMNS.
+  shopt -s checkwinsize
+
+  # Make less more friendly for non-text input files, like binary.
+  [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+  # enable coloured ls and grep output.
+  if [ -x /usr/bin/dircolors ]; then
+    ( test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" ) || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias diff='diff --color'
+
+    alias grep='grep --color=auto'
+  fi
+
+  # Enable Bash completion.
+  if ! shopt -oq posix; then
+    if [ -f /usr/share/bash-completion/bash_completion ]; then
+      # shellcheck source=/dev/null
+      . /usr/share/bash-completion/bash_completion
+    elif [ -f /etc/bash_completion ]; then
+      # shellcheck source=/dev/null
+      . /etc/bash_completion
+    fi
+  fi
+
+  # Custom aliases
+  alias lll='ls -lah | less'
+  alias ll='ls -lah'
+  alias la='ls -A'
+  alias l='ls -F'
+  alias glog='git log --graph --pretty="format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset"'
+  alias c='clear && source $HOME/.bashrc'
+  alias :q='exit'
+  alias ..='cd ..'
+
+  alias vi='vim'
+  export EDITOR="/usr/bin/vim"
+  export LC_ALL="en_US.UTF-8"
+  export LANG="en_US.UTF-8"
+  export LANGUAGE="en_US.UTF-8"
+else
+  $SHELL
+  exit
+fi
+
+printf ".sshrc activated\n"
