@@ -1,0 +1,85 @@
+* {
+	font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+window#waybar {
+	background-color: rgba(0, 0, 0, .8);
+	color: #ffffff;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#workspaces button {
+	border-radius: 50%;
+	padding: 0 6px;
+	transition: border .2s;
+}
+
+#workspaces button:hover {
+}
+
+#clock,
+#battery,
+#backlight,
+#pulseaudio,
+#tray,
+#workspaces {
+	padding: 0 4px;
+	margin: 4px;
+	color: #ffffff;
+}
+
+#workspaces {
+	padding-left: 0;
+}
+
+#clock {
+}
+
+#battery {
+}
+
+#battery.charging, #battery.plugged {
+}
+
+@keyframes blink {
+	to {
+		color: #FF0000;
+	}
+}
+
+#battery.critical:not(.charging) {
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	background-color: #f53c3c;
+	color: #ffffff;
+}
+
+#backlight {
+}
+
+#pulseaudio {
+}
+
+#pulseaudio:hover {
+}
+
+#pulseaudio.muted {
+}
+
+#tray {
+}
+
+#tray > .passive {
+	-gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+	-gtk-icon-effect: highlight;
+}
