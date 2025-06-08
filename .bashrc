@@ -5,7 +5,6 @@
 
 # Don't keep duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
-
 # Append to the history file, don't overwrite it.
 shopt -s histappend
 
@@ -163,11 +162,6 @@ export NVM_DIR
 if xhost >& /dev/null; then
   export DISPLAY=:0
 fi
-
-# if [ "$(tty)" == "/dev/tty1" ]; then
-#   startx > /dev/null 2>&1
-  # return
-# fi
 
 # Greet the user when a terminal opens.
 if [ -f "$HOME/bin/motd" ]; then
