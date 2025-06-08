@@ -12,3 +12,15 @@ ln -sf "$DOTFILES/.sshrc" "$HOME/.sshrc"
 ln -sf "$DOTFILES/.sshrc.d" "$HOME/.sshrc.d"
 ln -sf "$DOTFILES/.tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$DOTFILES/.zshrc" "$HOME/.zshrc"
+
+if [ ! -d "$HOME/.config/nvim" ]; then
+  git clone git@github.com:Dobefu/nvim-config.git "$HOME/.config/nvim"
+fi
+
+if [ ! -d "$HOME/bin" ]; then
+  git clone git@github.com:Dobefu/bin.git "$HOME/bin"
+fi
+
+if [ ! -d "$HOME/.config/ghostty" ]; then
+  git clone git@github.com:Dobefu/ghostty-config.git "$HOME/.config/ghostty"
+fi
