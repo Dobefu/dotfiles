@@ -1,97 +1,108 @@
 * {
-    font: "Roboto 20";
-    padding: 0px;
-    background-color: #fff;
-    line-style: "none";
+  font: "Roboto 20";
+  padding: 0px;
+  background-color: #fff;
+  line-style: "none";
 }
 
 prompt-box {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 prompt {
-	background-color: transparent;
-	text-color: #fff;
+  background-color: transparent;
+  text-color: #fff;
 }
 
 window {
-    background-color: transparent;
+  background-color: transparent;
 }
+
 mainbox {
-    padding: 0px;
-    background-color: #135d;
-    spacing: 0%;
+  padding: 0px;
+  background-color: #135d;
+  spacing: 0%;
 }
 
 listview {
-    border-radius: 2px;
-    margin: 25px;
-    background-color: #0004;
-    scrollbar: false;
-    scrollbar-width: 5px;
-    fixed-height: true;
-    reverse: false;
-    color: #000000;
-    spacing: 0px;
+  border-radius: 2px;
+  margin: 25px;
+  background-color: #0004;
+  scrollbar: false;
+  scrollbar-width: 5px;
+  fixed-height: true;
+  reverse: false;
+  color: #000000;
+  spacing: 0px;
 }
+
 element {
-    padding: 15px 20px;
-    color: #fff;
+  color: #fff;
+  padding: 15px 20px;
 }
+
 element normal.normal, element alternate.normal {
-    background-color: #0002;
+  background-color: #0002;
 }
+
 element normal.urgent, element alternate.urgent {
-    background-color: #933;
+  background-color: #933;
 }
+
 element normal.active, element alternate.active {
-    background-color: #0004;
+  background-color: #0004;
 }
+
 element selected.normal {
-    border-radius: 0px;
-    background-color: #0008;
+  border-radius: 0px;
+  background-color: #0008;
 }
+
 element selected.urgent {
-    background-color: #a77;
+  background-color: #a77;
 }
+
 element selected.active {
-    background-color: #0008;
+  background-color: #0008;
 }
+
 inputbar {
-    spacing: 10px;
-    border-radius: 0px;
-    padding: 7px 50px;
-    background-color: #0004;
-    color: #000;
-    end: true;
+  spacing: 10px;
+  border-radius: 0px;
+  padding: 7px 50px;
+  background-color: #0004;
+  color: #000;
+  end: true;
 }
 
 prompt normal.normal {
-    background-color: #0000;
-    color: #fff;
-    padding: 0px;
+  background-color: #0000;
+  color: #fff;
+  padding: 0px;
 }
+
 entry normal.normal {
-    background-color: #0000;
-    color: #fff;
-    padding: 0px;
+  background-color: #0000;
+  color: #fff;
+  padding: 0px;
 }
+
 case-indicator normal.normal {
-    background-color: #0000;
-    color: #fff;
-    padding: 0px;
+  background-color: #0000;
+  color: #fff;
+  padding: 0px;
 }
 
 message {
-	margin: 30px 30px 30px 30px;
-	padding: 20px 30px 20px 20px;
-    padding: 1px;
-    border-radius: 10px;
-    border: 5px 5px 5px 5px;
+  margin: 30px 30px 30px 30px;
+  padding: 20px 30px 20px 20px;
+  padding: 1px;
+  border-radius: 10px;
+  border: 5px 5px 5px 5px;
 }
 
 prompt-colon {
-    spacing: 10px;
-    enabled: true;
+  spacing: 10px;
+  enabled: true;
 }
 
