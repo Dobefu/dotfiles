@@ -12,6 +12,9 @@ ln -sf "$DOTFILES/.sshrc" "$HOME/.sshrc"
 ln -sf "$DOTFILES/.sshrc.d" "$HOME/.sshrc.d"
 ln -sf "$DOTFILES/.tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$DOTFILES/.zshrc" "$HOME/.zshrc"
+ln -sf "$DOTFILES/.config/gtk-2.0" "$HOME/.config/gtk-2.0"
+ln -sf "$DOTFILES/.config/gtk-3.0" "$HOME/.config/gtk-3.0"
+ln -sf "$DOTFILES/.config/gtk-4.0" "$HOME/.config/gtk-4.0"
 
 if [ ! -d "$HOME/.config/nvim" ]; then
   git clone git@github.com:Dobefu/nvim-config.git "$HOME/.config/nvim"
