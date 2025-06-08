@@ -17,17 +17,17 @@ ln -sf "$DOTFILES/.config/gtk-3.0" "$HOME/.config/gtk-3.0"
 ln -sf "$DOTFILES/.config/gtk-4.0" "$HOME/.config/gtk-4.0"
 
 if [ ! -d "$HOME/.config/nvim" ]; then
-  git clone git@github.com:Dobefu/nvim-config.git "$HOME/.config/nvim"
+  git clone --recurse-submodules git@github.com:Dobefu/nvim-config.git "$HOME/.config/nvim"
 fi
 
 if [ ! -d "$HOME/bin" ]; then
-  git clone git@github.com:Dobefu/bin.git "$HOME/bin"
+  git clone --recurse-submodules git@github.com:Dobefu/bin.git "$HOME/bin"
 fi
 
 if [ ! -d "$HOME/.config/ghostty" ]; then
-  git clone git@github.com:Dobefu/ghostty-config.git "$HOME/.config/ghostty"
+  git clone --recurse-submodules git@github.com:Dobefu/ghostty-config.git "$HOME/.config/ghostty"
 fi
 
 if [ ! -d "$HOME/.config/zsh" ]; then
-  git clone git@github.com:Dobefu/zsh-config.git "$HOME/.config/zsh"
+  git clone --recurse-submodules git@github.com:Dobefu/zsh-config.git "$HOME/.config/zsh"
 fi
