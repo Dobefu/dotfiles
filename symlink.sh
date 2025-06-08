@@ -22,6 +22,7 @@ fi
 
 if [ ! -d "$HOME/bin" ]; then
   git clone --recurse-submodules git@github.com:Dobefu/bin.git "$HOME/bin"
+  cd "$HOME/bin/motd-git" && go build
 fi
 
 if [ ! -d "$HOME/.config/ghostty" ]; then
