@@ -1,1 +1,1 @@
-/Users/dobefu/dotfiles/.sshrc.d
+/home/dobefu/dotfiles/.sshrc.d

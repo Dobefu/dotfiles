@@ -30,4 +30,5 @@ fi
 
 if [ ! -d "$HOME/.config/zsh" ]; then
   git clone --recurse-submodules git@github.com:Dobefu/zsh-config.git "$HOME/.config/zsh"
+  touch "$HOME/.config/zsh/config/private.zsh"
 fi
