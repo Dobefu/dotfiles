@@ -24,3 +24,7 @@ fi
 if [ ! -d "$HOME/.config/ghostty" ]; then
   git clone git@github.com:Dobefu/ghostty-config.git "$HOME/.config/ghostty"
 fi
+
+if [ ! -d "$HOME/.config/zsh" ]; then
+  git clone git@github.com:Dobefu/zsh-config.git "$HOME/.config/zsh"
+fi
