@@ -19,6 +19,8 @@ ln -sf "$DOTFILES/gtk-3.0" "$HOME/.config/gtk-3.0"
 ln -sf "$DOTFILES/gtk-4.0" "$HOME/.config/gtk-4.0"
 ln -sf "$DOTFILES/waybar" "$HOME/.config/waybar"
 ln -sf "$DOTFILES/hypr" "$HOME/.config/hypr"
+ln -sf "$DOTFILES/qt5ct" "$HOME/.config/qt5ct"
+ln -sf "$DOTFILES/qt6ct" "$HOME/.config/qt6ct"
 
 if [ ! -d "$HOME/.config/nvim" ]; then
   git clone --recurse-submodules git@github.com:Dobefu/nvim-config.git "$HOME/.config/nvim"
