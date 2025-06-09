@@ -1,21 +1,11 @@
-# Custom aliases
-alias sshwonder='ssh webdev@test.wonderkruid.nl'
-alias sshwonroot='ssh root@test.wonderkruid.nl'
-alias sshacc='ssh webdev@acc.wonderkruid.nl'
-alias sshaccroot='ssh root@acc.wonderkruid.nl'
-alias sshlight='ssh root@lighthouse.wonderkruid.nl'
-alias sshweb01='ssh webdev@web01.wunderkraut.nl'
-alias sshweb02='ssh webdev@web02.wunderkraut.nl'
-
+# Custom aliases.
 alias lll='ls -lah | less'
 alias ll='ls -lah'
 alias la='ls -A'
 alias l='ls -CF'
 alias sc='sudo systemctl'
 alias glog='git log --graph --pretty="format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset"'
-alias fucking='sudo'
 alias c='reset -Q && source $HOME/.bashrc'
-alias initdocker='git clone git@bitbucket.org:wknl/docker.git'
 alias :q='exit'
 alias ..='cd ..'
 
