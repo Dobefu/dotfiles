@@ -54,7 +54,7 @@ element normal.active, element alternate.active {
 }
 
 element selected.normal {
-  border-radius: 0px;
+  border-radius: 0;
   background-color: #0008;
 }
 
