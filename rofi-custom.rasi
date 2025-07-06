@@ -19,7 +19,7 @@ window {
 }
 
 mainbox {
-  padding: 0px;
+  padding: 0;
   background-color: #135d;
   spacing: 0%;
 }
