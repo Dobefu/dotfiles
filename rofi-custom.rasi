@@ -1,6 +1,6 @@
 * {
   font: "Roboto 20";
-  padding: 0px;
+  padding: 0;
   background-color: #fff;
   line-style: "none";
 }
