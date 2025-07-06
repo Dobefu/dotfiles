@@ -68,7 +68,7 @@ element selected.active {
 
 inputbar {
   spacing: 10px;
-  border-radius: 0px;
+  border-radius: 0;
   padding: 7px 50px;
   background-color: #0004;
   color: #000;
