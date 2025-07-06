@@ -90,7 +90,7 @@ entry normal.normal {
 case-indicator normal.normal {
   background-color: #0000;
   color: #fff;
-  padding: 0px;
+  padding: 0;
 }
 
 message {
