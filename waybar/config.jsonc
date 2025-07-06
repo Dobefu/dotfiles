@@ -33,7 +33,17 @@
   },
   "backlight": {
     "format": "{icon}  {percent}%",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "battery": {
     "states": {
@@ -45,7 +55,13 @@
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
-    "format-icons": ["  ", "  ", "  ", "  ", "  "]
+    "format-icons": [
+      "  ",
+      "  ",
+      "  ",
+      "  ",
+      "  "
+    ]
   },
   "pulseaudio": {
     "format": "{icon} {volume}%     {format_source}",
@@ -61,7 +77,11 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [" ", "  ", "   "]
+      "default": [
+        " ",
+        "  ",
+        "   "
+      ]
     },
     "on-click": "pavucontrol"
   },
