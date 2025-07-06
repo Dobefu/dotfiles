@@ -33,7 +33,7 @@ listview {
   fixed-height: true;
   reverse: false;
   color: #000000;
-  spacing: 0px;
+  spacing: 0;
 }
 
 element {
