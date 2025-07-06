@@ -34,7 +34,7 @@ configuration {
   separator-style:             "none";
   hide-scrollbar:              "true";
   margin:                      0;
-  padding:                     0px;
+  padding:                     0;
   font:                        "Helvetica medium 12";
 }
 
