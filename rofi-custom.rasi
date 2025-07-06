@@ -84,7 +84,7 @@ prompt normal.normal {
 entry normal.normal {
   background-color: #0000;
   color: #fff;
-  padding: 0px;
+  padding: 0;
 }
 
 case-indicator normal.normal {
