@@ -41,7 +41,7 @@ configuration {
 window {
   location:	     center;
   anchor:		     center;
-  x-offset:      0px;
+  x-offset:      0;
   height:	       50%;
   width:         50%;
   border-radius: 6px;
