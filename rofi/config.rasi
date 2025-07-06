@@ -52,7 +52,7 @@ window {
 
 mainbox {
   spacing:  0em;
-  padding:  0px;
+  padding:  0;
   width:    200px;
   children: [ inputbar, listview-container ];
   expand:   true;
