@@ -13,7 +13,9 @@
   defaultBranch = main
 [alias]
   poes = push
+  psuh = push
   pool = pull
+  commti = commit
   stauts = status
   ls = status
   ctags = !.git/hooks/ctags
