@@ -16,6 +16,7 @@
   psuh = push
   pool = pull
   commti = commit
+  ocmmit = commit
   stauts = status
   ls = status
   ctags = !.git/hooks/ctags
