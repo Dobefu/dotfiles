@@ -20,3 +20,8 @@ $BASE_DIR/bin/motd
 . $ZSH_DIR/config/exports.zsh
 . $ZSH_DIR/config/functions.zsh
 . $ZSH_DIR/config/private.zsh
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/connor.vanspronssen/.lmstudio/bin"
+# End of LM Studio CLI section
+

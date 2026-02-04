@@ -126,3 +126,8 @@ if [ -f "$HOME/bin/motd" ]; then
   "$HOME"/bin/motd
 fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/connor.vanspronssen/.lmstudio/bin"
+# End of LM Studio CLI section
+
