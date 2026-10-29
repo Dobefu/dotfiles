@@ -4,6 +4,7 @@ export VIMINIT="let \$VIMRC='$SSHHOME/.sshrc.d/.vimrc' | source \$VIMRC"
 export PATH="$PATH:$SSHHOME/.sshrc.d/bin"
 export TERM="xterm-256color"
 export DISPLAY="localhost:10.0"
+export TMUX=1
 
 if echo "$SHELL" | grep -q 'bash'; then
   # check the window size after each command and, if necessary,
